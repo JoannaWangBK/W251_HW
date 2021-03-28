@@ -27,15 +27,15 @@ class DQN:
 
         #######################
         # Change these parameters to improve performance
-        self.density_first_layer = 32
-        self.density_second_layer = 16
+        self.density_first_layer = 16
+        self.density_second_layer = 8
         self.num_epochs = 1
-        self.batch_size = 32
-        self.epsilon_min = 0.4
+        self.batch_size = 64
+        self.epsilon_min = 0.01
 
         # epsilon will randomly choose the next action as either
         # a random action, or the highest scoring predicted action
-        self.epsilon = 1.5
+        self.epsilon = 1.0
         self.epsilon_decay = 0.995
         self.gamma = 0.99
 
